@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function ValidateForm() {
+
+if ( (document.getElementById("r1").checked == false ) && ( document.getElementById("r2").checked == false) )
+{
+alert("Please choose your Gender: Male or Female");
+
+}
+else { alert("Ok"); }
+
+}
+</script>
+</head>
+<body>
+<form>
+ <input type="radio" id="r1" name="gender" value="Male"> Male
+<input type="radio" name="gender" id="r2" value="Female"> Female
+<input type="button" name="SubmitButton" value="Submit" onClick="ValidateForm()">
+<input type="reset" value="Reset">
+</form>
+</body>
+</html>
